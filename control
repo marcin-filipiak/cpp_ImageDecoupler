@@ -1,0 +1,5 @@
+Package: decoupler
+Version: 0.1
+Architecture: all
+Maintainer: Marcin Filipiak <m.filipiak@noweenergie.org>
+Description: program scans a folder for JPG image files, calculates their MD5 hashes, and checks for duplicates based on these hashes

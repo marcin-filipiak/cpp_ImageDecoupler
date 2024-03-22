@@ -9,6 +9,7 @@
 #include <termios.h>
 #include <unistd.h>
 
+#define VERSION "0.1"
 
 using namespace std;
 
@@ -167,17 +168,17 @@ void findDuplicateMD5(const std::string& filePath) {
 	    sel = getch();
 	    if (sel == '1'){
 		deleteFile(md5Map[md5Hash]);
-		cout << "Deleted 1\n";
+		std::cout << "Deleted 1\n";
 	    }
 	    if (sel == '2'){
 		deleteFile(filePath);
-		cout << "Deleted 2\n";
+		std::cout << "Deleted 2\n";
 	    }
 	    if (sel == '3'){
-		cout << "Canceled\n";
+		std::cout << "Canceled\n";
 	    }
 	    if (sel == '4'){
-		cout << "Bye!\n";
+		std::cout << "Bye!\n";
 		break;
 	    }
         }
@@ -195,12 +196,14 @@ std::string removeTrailingSlash(const std::string& folder) {
 
 
 int main(int argc, char* argv[]) {
+    std::cout << "DECOUPLER - find and remove duplicated JPG\n" << "version:" << VERSION << std::endl;
 
     if (argc < 2) {
-        std::cerr << "Using: " << argv[0] << " <path> [-r]" << std::endl;
-        std::cerr << "<path> - path to folder with images" << std::endl;
-        std::cerr << "-r - if you want recursive checking in subfolders" << std::endl;
-	std::cerr << std::endl;
+        std::cout << "\nUsing: decoupler <path> [-r]" << std::endl;
+        std::cout << "<path>   path to folder with images" << std::endl;
+        std::cout << "-r       if you want recursive checking in subfolders" << std::endl;
+	std::cout << "\nexample: decoupler /home/user/images -r" << std::endl;
+	std::cout << std::endl;
         return 1;
     }
     
