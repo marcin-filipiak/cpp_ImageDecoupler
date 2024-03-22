@@ -1,5 +1,7 @@
 #!/bin/sh
 
+# https://github.com/marcin-filipiak/bash_GCompileAndPack
+
 params="-lcrypto"
 
 # package name from control file
