@@ -21,3 +21,7 @@ It includes error handling mechanisms to deal with issues such as file opening f
 To use the program, you provide the path to the folder containing JPG files as a command-line argument. Optionally, you can specify the "-r" flag to enable recursive searching within subfolders. After scanning and detecting duplicates, it generates a file named "decoupler_list.txt" containing the paths of JPG files and their MD5 hashes for reference.
 
 Overall, this program offers a straightforward way to manage duplicate JPG files within a folder structure.
+
+## Links
+
+* ![Image Decoupler with GUI](https://github.com/marcin-filipiak/gtkmm_ImageDecoupler)
