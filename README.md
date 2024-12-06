@@ -25,3 +25,11 @@ Overall, this program offers a straightforward way to manage duplicate JPG files
 ## Links
 
 * ![Image Decoupler with GUI](https://github.com/marcin-filipiak/gtkmm_ImageDecoupler)
+
+My tools for images segregation, resizing etc:
+
+* ![Image Decoupler GUI](https://github.com/marcin-filipiak/gtkmm_ImageDecoupler) - GTKmm, find duplicated images in subfolders
+* ![Image Decoupler Console](https://github.com/marcin-filipiak/cpp_ImageDecoupler) - Console, find duplicated images in subfolders
+* ![Image Segregator GUI](https://github.com/marcin-filipiak/gtk_ImageSegregator) - GTK, usefull tool for images segregation
+* ![Image Resizer GUI](https://github.com/marcin-filipiak/gtk_ImageResizer) - GTK , resize images in folder
+* ![Image Resizer GUI](https://github.com/marcin-filipiak/qt_ImgFolderResizer) - Qt, resize images in folder
